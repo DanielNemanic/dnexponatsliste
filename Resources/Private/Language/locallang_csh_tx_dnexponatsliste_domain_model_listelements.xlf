@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2014-12-04T16:30:48Z" product-name="dnexponatsliste">
+		<header/>
+		<body>
+			<trans-unit id="elementtitle.description">
+				<source>elementtitle</source>
+			</trans-unit>
+			<trans-unit id="elementtip.description">
+				<source>elementtip</source>
+			</trans-unit>
+			<trans-unit id="exceltitle.description">
+				<source>exceltitle</source>
+			</trans-unit>
+			<trans-unit id="exceltip.description">
+				<source>exceltip</source>
+			</trans-unit>
+			<trans-unit id="beispiel.description">
+				<source>beispiel</source>
+			</trans-unit>
+			<trans-unit id="inputtype.description">
+				<source>inputtype</source>
+			</trans-unit>
+			<trans-unit id="bgcolor.description">
+				<source>bgcolor</source>
+			</trans-unit>
+			<trans-unit id="upload.description">
+				<source>upload</source>
+			</trans-unit>
+			<trans-unit id="selectfield.description">
+				<source>selectfield</source>
+			</trans-unit>
+			<trans-unit id="listentrys.description">
+				<source>listentrys</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

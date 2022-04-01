@@ -1,0 +1,29 @@
+
+plugin.tx_dnexponatsliste {
+	view {
+		# cat=plugin.tx_dnexponatsliste/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:dnexponatsliste/Resources/Private/Templates/
+		# cat=plugin.tx_dnexponatsliste/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:dnexponatsliste/Resources/Private/Partials/
+		# cat=plugin.tx_dnexponatsliste/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:dnexponatsliste/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_dnexponatsliste//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+
+## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder
+plugin.tx_dnexponatsliste {
+    settings {
+        # cat=plugin.tx_dnexponatsliste//a; type=string; label=Default storage PID for Elements
+        elementStoragePid =
+        # cat=plugin.tx_dnexponatsliste//a; type=boolean; label=Editable ;
+        editable =
+        # cat=plugin.tx_dnexponatsliste//a; type=string; label=Admin Group ;
+        adminGroup =
+        # cat=plugin.tx_dnexponatsliste//a; type=string; label=Site Name ;
+        siteName =
+    }
+}

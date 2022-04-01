@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2014-12-04T16:30:48Z" product-name="dnexponatsliste">
+		<header/>
+		<body>
+			<trans-unit id="createdby.description">
+				<source>createdby</source>
+			</trans-unit>
+			<trans-unit id="createdat.description">
+				<source>createdat</source>
+			</trans-unit>
+			<trans-unit id="editedby.description">
+				<source>editedby</source>
+			</trans-unit>
+			<trans-unit id="editedat.description">
+				<source>editedat</source>
+			</trans-unit>
+			<trans-unit id="exponatsnr.description">
+				<source>exponatsnr</source>
+			</trans-unit>
+			<trans-unit id="user_entrys.description">
+				<source>userEntrys</source>
+			</trans-unit>
+			<trans-unit id="spaltensperren.description">
+				<source>spaltensperren</source>
+			</trans-unit>
+			<trans-unit id="ansprechpartner.description">
+				<source>anprechpartner</source>
+			</trans-unit>
+			<trans-unit id="institut.description">
+				<source>institut</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

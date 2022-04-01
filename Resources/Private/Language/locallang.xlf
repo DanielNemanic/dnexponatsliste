@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2014-12-04T16:30:48Z"
+	      product-name="dnexponatsliste">
+		<header/>
+		<body>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements">
+				<source>List Elements</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.elementtitle">
+				<source>Elementtitle</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.elementtip">
+				<source>Elementtip</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.exceltitle">
+				<source>Exceltitle</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.exceltip">
+				<source>Exceltip</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.beispiel">
+				<source>Beispiel</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.inputtype">
+				<source>Inputtype</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.bgcolor">
+				<source>Bgcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.upload">
+				<source>Upload</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate">
+				<source>Exponate</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.uid">
+				<source>ID</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.createdby">
+				<source>Createdby</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.createdat">
+				<source>Createdat</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.editedby">
+				<source>Editedby</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.editedat">
+				<source>Editedat</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.exponatsnr">
+				<source>Exponatsnr</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.ansprechpartner">
+				<source>Ansprechpartner</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.institut">
+				<source>Institut</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.user_entrys">
+				<source>User Entrys</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_userentrys">
+				<source>User Entrys</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_userentrys.listelement">
+				<source>Listelement</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_userentrys.listentry">
+				<source>Listentry</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_spaltensperren">
+				<source>Spalten Sperren</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_spaltensperren.gesperrteelemte">
+				<source>Gesperrteelemte</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_emailreceiver">
+				<source>Email Receiver</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_emailreceiver.mailadress">
+				<source>Mailadress</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_emailreceiver.receivername">
+				<source>Receiver Name</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_emailreceiver.maillanguage">
+				<source>Mail language</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.spaltensperren">
+				<source>Spaltensperren</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_spaltensperren.gepserrteelemte">
+				<source>Gepserrteelemte</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys">
+				<source>List Entrys</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys.createdby">
+				<source>Createdby</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys.createdat">
+				<source>Createdat</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys.editedby">
+				<source>Editedby</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys.editedat">
+				<source>Editedat</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys.user_entrys">
+				<source>User Entrys</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys.spaltensperren">
+				<source>Spaltensperren</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_spaltensperren.listelement">
+				<source>Listelement</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_spaltensperren.gesperrt">
+				<source>Gesperrt</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.listentrys">
+				<source>Listentrys</source>
+			</trans-unit>
+			<trans-unit id="EditDate">
+				<source>Änderung / Datum</source>
+			</trans-unit>
+			<trans-unit id="new_exponat_message">
+				<source>Das Exponat wurde erfolgreich gespeichert.</source>
+			</trans-unit>
+			<trans-unit id="new_exponat">
+				<source>Neues Exponat</source>
+			</trans-unit>
+			<trans-unit id="ed_exponat">
+				<source>Exponat bearbeiten</source>
+			</trans-unit>
+			<trans-unit id="create">
+				<source>Erstellen</source>
+			</trans-unit>
+			<trans-unit id="edit">
+				<source>Bearbeiten</source>
+			</trans-unit>
+			<trans-unit id="search_table">
+				<source>In der Tabelle suchen</source>
+			</trans-unit>
+			<trans-unit id="delete_file">
+				<source>Datei löschen?</source>
+			</trans-unit>
+			<trans-unit id="not_editable">
+				<source>Messe nicht mehr editierbar.</source>
+			</trans-unit>
+			<trans-unit id="no_access">
+				<source>Sie dürfen dieses Exponat nicht bearbeiten.</source>
+			</trans-unit>
+			<trans-unit id="file_not_deleted">
+				<source>Die Datei wurde nicht gelöscht.</source>
+			</trans-unit>
+			<trans-unit id="file_deleted">
+				<source>Die Datei wurde gelöscht.</source>
+			</trans-unit>
+			<trans-unit id="file_not_uploaded">
+				<source>Die Datei wurde nicht hochgeladen.</source>
+			</trans-unit>
+			<trans-unit id="file_uploaded">
+				<source>Die Datei wurde hochgeladen.</source>
+			</trans-unit>
+			<trans-unit id="edited_exponat">
+				<source>Das Exponat wurde bearbeitet.</source>
+			</trans-unit>
+			<trans-unit id="eigene_exponate">
+				<source>Eigene Einträge anzeigen</source>
+			</trans-unit>
+			<trans-unit id="hide_printing">
+				<source>Spalten ausblenden</source>
+			</trans-unit>
+			<trans-unit id="alle_exponat">
+				<source>Alle Einträge anzeigen</source>
+			</trans-unit>
+			<trans-unit id="format_kleiner">
+				<source>Formatierung verkleinern</source>
+			</trans-unit>
+			<trans-unit id="format_groesser">
+				<source>Formatierung vergrößern</source>
+			</trans-unit>
+			<trans-unit id="delete_exponat">
+				<source>Exponat Löschen?</source>
+			</trans-unit>
+			<trans-unit id="selected_download">
+				<source>Excel Datei erstellen</source>
+			</trans-unit>
+			<trans-unit id="exponat_deleted">
+				<source>Das Exponat wurde gelöscht.</source>
+			</trans-unit>
+			<trans-unit id="download_begin">
+				<source>Der Download beginnt...</source>
+			</trans-unit>
+			<trans-unit id="spalten_sperren">
+				<source>Spalten sperren</source>
+			</trans-unit>
+			<trans-unit id="spalten_update">
+				<source>Die Spalten wurden gesperrt/entsperrt.</source>
+			</trans-unit>
+			<trans-unit id="edit_exponat">
+				<source>Exponat bearbeitet</source>
+			</trans-unit>
+			<trans-unit id="deleted_exponat">
+				<source>Exponat gelöscht</source>
+			</trans-unit>
+			<trans-unit id="mail_message_1">
+				<source>Es gab eine Änderung am folgendem Exponat:</source>
+			</trans-unit>
+			<trans-unit id="mail_message_2">
+				<source>Folgender User hat die Änderung durchgeführt:</source>
+			</trans-unit>
+			<trans-unit id="mail_message_3">
+				<source>Uhrzeit:</source>
+			</trans-unit>
+			<trans-unit id="gesperrt_message">
+				<source>Ein Eintrag in dieser Spalte ist nicht mehr möglich. Bitte wenden Sie sich an den zuständigen
+					Expotechnik Projektleiter.
+				</source>
+			</trans-unit>
+			<trans-unit id="fileStoragePath">
+				<source>Storage Path</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_tabs">
+				<source>Tab</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_tabs.tabs">
+				<source>Tab Name</source>
+			</trans-unit>
+			<trans-unit id="separateTabs">
+				<source>Erstelle eine Tab Trennung</source>
+			</trans-unit>
+			<trans-unit id="filesBadge">
+				<source>Anzahl an Dateien</source>
+			</trans-unit>
+			<trans-unit id="id">
+				<source>ID</source>
+			</trans-unit>
+			<trans-unit id="exponatsliste">
+				<source>Exponats-Liste</source>
+			</trans-unit>
+			<trans-unit id="dateiliste">
+				<source>Datei-Liste</source>
+			</trans-unit>
+			<trans-unit id="dateiname">
+				<source>Datei-Name</source>
+			</trans-unit>
+			<trans-unit id="link">
+				<source>Datei-Name</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_deadline">
+				<source>Deadline</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_deadline.save">
+				<source>Deadline speichern</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_deadline.saved">
+				<source>Deadline gespeichert</source>
+			</trans-unit>
+			<trans-unit id="editByEveryone">
+				<source>Jeder kann bearbeiten</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.maxcharacters">
+				<source>Maximale Zeichen</source>
+			</trans-unit>
+			<trans-unit id="fixedTabElements">
+				<source>Fixe Elemente in der Tab Übersicht</source>
+			</trans-unit>
+			<trans-unit id="receiveMail">
+				<source>Erhalte E-Mail Benachrichtigungen bei Änderungen</source>
+			</trans-unit>
+			<trans-unit id="notification.deactivation">
+				<source>Abgemeldet</source>
+			</trans-unit>
+			<trans-unit id="notification.activation">
+				<source>Angemeldet</source>
+			</trans-unit>
+			<trans-unit id="new_element">
+				<source>Neues Exponat erstellen sperren</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

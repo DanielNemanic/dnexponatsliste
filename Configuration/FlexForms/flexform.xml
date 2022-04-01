@@ -1,0 +1,133 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Function</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.siteName>
+						<TCEforms>
+							<label>Site Name</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+								<max>30</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</settings.siteName>
+					<settings.elementStoragePid>
+						<TCEforms>
+							<label>Element Storage Pid</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</settings.elementStoragePid>
+					<settings.editable>
+						<TCEforms>
+							<label>Editable</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</settings.editable>
+					<settings.editable>
+						<TCEforms>
+							<label>Editable</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</settings.editable>
+					<settings.adminGroup>
+						<TCEforms>
+							<label>Admin Group</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0"></numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+								</items>
+								<foreign_table>fe_groups</foreign_table>
+							</config>
+						</TCEforms>
+					</settings.adminGroup>
+					<settings.editByEveryone>
+						<TCEforms>
+							<label>LLL:EXT:dnexponatsliste/Resources/Private/Language/locallang.xlf:editByEveryone</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</settings.editByEveryone>
+					<settings.fileStoragePath>
+						<TCEforms>
+							<label>LLL:EXT:dnexponatsliste/Resources/Private/Language/locallang.xlf:fileStoragePath</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0"></numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+								</items>
+								<foreign_table>sys_file_storage</foreign_table>
+								<eval>required</eval>
+							</config>
+						</TCEforms>
+					</settings.fileStoragePath>
+					<settings.fixedTabElements>
+						<TCEforms>
+							<label>LLL:EXT:dnexponatsliste/Resources/Private/Language/locallang.xlf:fixedTabElements</label>
+							<config>
+								<type>select</type>
+								<renderType>selectMultipleSideBySide</renderType>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">ID</numIndex>
+										<numIndex index="1">uid</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">Exponatsnr</numIndex>
+										<numIndex index="1">exponatsnr</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">Ansprechpartner</numIndex>
+										<numIndex index="1">ansprechpartner</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">Institut</numIndex>
+										<numIndex index="1">institut</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>50</maxitems>
+								<size>3</size>
+							</config>
+						</TCEforms>
+					</settings.fixedTabElements>
+					<settings.separateTabs>
+						<TCEforms>
+							<label>LLL:EXT:dnexponatsliste/Resources/Private/Language/locallang.xlf:separateTabs</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</settings.separateTabs>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

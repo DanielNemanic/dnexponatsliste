@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2014-12-04T16:30:48Z" product-name="dnexponatsliste">
+		<header/>
+		<body>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements">
+				<source>List Elements</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.elementtitle">
+				<source>Elementtitle</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.elementtip">
+				<source>Elementtip</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.exceltitle">
+				<source>Exceltitle</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.exceltip">
+				<source>Exceltip</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.beispiel">
+				<source>Beispiel</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.inputtype">
+				<source>Inputtype</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.maxcharacters">
+				<source>Maximale Zeichen</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.bgcolor">
+				<source>Bgcolor</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.upload">
+				<source>Upload</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.selectfield">
+				<source>Selectfield separate and end with ;</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate">
+				<source>Exponate</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.createdby">
+				<source>Createdby</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.createdat">
+				<source>Createdat</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.editedby">
+				<source>Editedby</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.editedat">
+				<source>Editedat</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.exponatsnr">
+				<source>Exponatsnr</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.ansprechpartner">
+				<source>Ansprechpartner</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.institut">
+				<source>Institut</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.user_entrys">
+				<source>User Entrys</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_userentrys">
+				<source>User Entrys</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_userentrys.listelement">
+				<source>Listelement</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_userentrys.listentry">
+				<source>Listentry</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_spaltensperren">
+				<source>Spalten Sperren</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_spaltensperren.gesperrteelemte">
+				<source>Gesperrteelemte</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_emailreceiver">
+				<source>Email Receiver</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_emailreceiver.mailadress">
+				<source>Mailadress</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_emailreceiver.receivername">
+				<source>Receiver Name</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_emailreceiver.userid">
+				<source>User ID</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_emailreceiver.maillanguage">
+				<source>Mail language</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_exponate.spaltensperren">
+				<source>Spaltensperren</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_spaltensperren.gepserrteelemte">
+				<source>Gepserrteelemte</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys">
+				<source>List Entrys</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys.createdby">
+				<source>Createdby</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys.createdat">
+				<source>Createdat</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys.editedby">
+				<source>Editedby</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys.editedat">
+				<source>Editedat</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys.user_entrys">
+				<source>User Entrys</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listentrys.spaltensperren">
+				<source>Spaltensperren</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_spaltensperren.listelement">
+				<source>Listelement</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_spaltensperren.gesperrt">
+				<source>Gesperrt</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_listelements.listentrys">
+				<source>Listentrys</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_tabs">
+			    <source>Tab</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_tabs.tabs">
+			    <source>Tab Name</source>
+			</trans-unit>
+			<trans-unit id="tx_dnexponatsliste_domain_model_deadline">
+			    <source>Deadline</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

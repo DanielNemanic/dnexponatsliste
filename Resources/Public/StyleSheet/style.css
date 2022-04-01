@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* 
+ * Created by Daniel Nemanic
+ * daniel.nemanic@etglobal.com
+*/
+
+.tx-exponatsliste .ScrollTable>table { table-layout: auto; }
+.tx-exponatsliste .ScrollTable>table>thead>tr>th { background-color: #4f4f4f;color: #fff; vertical-align: middle; position: relative;}
+.tx-exponatsliste .ScrollTable>table>thead>tr>th:FIRST-CHILD,
+.tx-exponatsliste .ScrollTable>table>tbody>tr>td:FIRST-CHILD {width:6vw;min-width:200px;}
+
+.tx-exponatsliste .Bsp:link, .tx-exponatsliste .Bsp:visited { color: #a94442; text-decoration: none; }
+
+.tx-exponatsliste .ScrollTable>table>tbody>tr>td { word-break: break-all;max-width:250px;position:relative; }
+.tx-exponatsliste .ScrollTable>table>tbody>tr>td>div { overflow:hidden;height:35px; }
+.tx-exponatsliste .ScrollTable>table>tbody>tr>td>div a:link, .tx-exponatsliste .ScrollTable>table>tbody>tr>td>div a:visited { font-size:0.9em;}
+.tx-exponatsliste .ScrollTable>table>tbody>tr>td>div .media-body { overflow: hidden; max-width: 210px;}
+.tx-exponatsliste .ScrollTable>table>tbody>tr>td>div .uk-badge {margin-left: 5px;position: absolute;top: 0;right: 0;}

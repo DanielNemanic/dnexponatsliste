@@ -1,0 +1,62 @@
+
+plugin.tx_dnexponatsliste {
+	view {
+		templateRootPath = {$plugin.tx_dnexponatsliste.view.templateRootPath}
+		partialRootPath = {$plugin.tx_dnexponatsliste.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_dnexponatsliste.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_dnexponatsliste.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder
+plugin.tx_dnexponatsliste {
+    persistence {
+        storagePid.override.cObject = TEXT
+        storagePid.override.cObject.field = uid
+    }
+    settings {
+        elementStoragePid   = {$plugin.tx_dnexponatsliste.settings.elementStoragePid}
+        editable            = {$plugin.tx_dnexponatsliste.settings.editable}
+        adminGroup          = {$plugin.tx_dnexponatsliste.settings.adminGroup}
+        siteName            = {$plugin.tx_dnexponatsliste.settings.siteName}
+    }
+}
+page.includeCSS.datepicker = EXT:dnexponatsliste/Resources/Public/datepicker/datepicker.css
+page.includeCSS.tx_dnexponatsliste = EXT:dnexponatsliste/Resources/Public/StyleSheet/style.css
+
+page.includeJSFooterlibs.tx_dnexponatsliste_sticky = EXT:dnthemeexpotechnik/Resources/Public/JavaScript/jquery.stickytableheaders.js
+page.includeJSFooterlibs.tx_dnexponatsliste_sticky.async = 1
+page.includeJSFooterlibs.datepicker = EXT:dnexponatsliste/Resources/Public/datepicker/datepicker.js
+page.includeJSFooterlibs.datepicker.async = 0
+page.includeJSFooterlibs.datepicker_en = EXT:dnexponatsliste/Resources/Public/datepicker/datepicker.en.js
+page.includeJSFooterlibs.datepicker_en.async = 0
+page.includeJSFooterlibs.datepicker_de = EXT:dnexponatsliste/Resources/Public/datepicker/datepicker.de.js
+page.includeJSFooterlibs.datepicker_de.async = 0
+page.includeJSFooterlibs.tx_dnexponatsliste = EXT:dnexponatsliste/Resources/Public/JavaScript/JS.js
+page.includeJSFooterlibs.tx_dnexponatsliste.async = 1
+
+dnExponatsListeAjax = PAGE
+dnExponatsListeAjax {
+	typeNum = 22092017
+	config {
+		disableAllHeaderCode = 1
+		additionalHeaders = Content-type: text/plain
+		xhtml_cleaning = 0
+		admPanel = 0
+		debug = 0
+		no_cache = 1
+	}
+	10 < styles.content.get
+	10 {
+		stdWrap.trim = 1
+		select.where = list_type='dnexponatsliste_dnexponatsliste'
+
+		renderObj < tt_content.list.20.dnexponatsliste_dnexponatsliste
+	}
+}

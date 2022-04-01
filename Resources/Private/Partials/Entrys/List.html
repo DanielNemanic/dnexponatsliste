@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<td>
+	<div>
+		<p>
+			<f:for each="{exponate.userEntrys}" as="userEntrys">
+				<f:if condition="{lE.uid}=={userEntrys.listelement}">
+					{userEntrys.listentry}
+				</f:if>
+			</f:for>
+		</p>
+		<f:if condition="{lE.upload}=='TRUE'">
+			<f:render partial="Exponate/Files"
+			          arguments="{listElement:lE, exponate:exponate.uid, fileStoragePath:settings.fileStoragePath}"/>
+		</f:if>
+	</div>
+</td>
+</html>

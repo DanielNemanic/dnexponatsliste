@@ -1,0 +1,86 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:DN="http://typo3.org/ns/DN/Dnexponatsliste/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<div id="NewExponatModal" class="uk-modal-container tx-exponatsliste" uk-modal>
+	<div class="uk-modal-dialog uk-modal-body">
+		<a class="uk-modal-close-default" uk-close></a>
+		
+		<h2>
+			<f:translate key="new_exponat"/>
+		</h2>
+		<hr/>
+		
+		<f:form action="create" name="newExponate" object="{newExponate}" class="uk-form-stacked"
+		        enctype="multipart/form-data">
+			
+			<f:for each="{fixedTabElements}" as="fixedTab">
+				<f:if condition="{fixedTab}!='uid'">
+					<div class="uk-margin">
+						<label for="{fixedTab}" class="uk-form-label">
+							<f:translate key="tx_dnexponatsliste_domain_model_exponate.{fixedTab}"/>
+						</label>
+						<div class="uk-controls">
+							<f:form.textfield property="{fixedTab}" class="uk-input"/>
+						</div>
+					</div>
+				</f:if>
+			</f:for>
+			<f:for each="{listElements}" as="ListElements">
+				<div class="uk-margin">
+					<label for="{ListElements.uid}" class="uk-form-label">{ListElements.elementtitle}<br><small>{ListElements.elementtip}</small></label>
+					<div class="uk-controls" uk-grid>
+						<div class="uk-width-3-5">
+							<f:if
+								condition="<DN:Gesperrt gesperrt='{spaltenSperren}' ListElement='{ListElements.uid}' /> && {SiteAdmin} == FALSE">
+								<f:then>
+									<f:if condition="{ListElements.inputtype}=='text'">
+										<f:form.textfield name="userEntrys[{ListElements.uid}]" class="uk-input" disabled="1"
+										                  additionalAttributes="{maxlength:'{ListElements.maxcharacters}', uk-tooltip:'pos:right'}"/>
+									</f:if>
+									<f:if condition="{ListElements.inputtype}=='textarea'">
+										<f:form.textarea name="userEntrys[{ListElements.uid}]" class="uk-textarea" rows="5" disabled="1"
+										                 additionalAttributes="{maxlength:'{ListElements.maxcharacters}', uk-tooltip:'pos:right'}"/>
+									</f:if>
+									<f:if condition="{ListElements.inputtype}=='select'">
+										<f:form.select name="userEntrys[{ListElements.uid}]" class="uk-select"
+										               options="<DN:Selectfield selectfield='{ListElements.selectfield}' />" disabled="1"/>
+									</f:if>
+									<f:if condition="{ListElements.upload}=='TRUE'">
+										<f:form.upload name="file[{ListElements.uid}]" class="uk-input" disabled="1"/>
+									</f:if>
+								</f:then>
+								<f:else>
+									<f:if condition="{ListElements.inputtype}=='text'">
+										<f:form.textfield name="userEntrys[{ListElements.uid}]" class="uk-input"
+										                  additionalAttributes="{maxlength:'{ListElements.maxcharacters}', uk-tooltip:'pos:right'}"/>
+									</f:if>
+									<f:if condition="{ListElements.inputtype}=='textarea'">
+										<f:form.textarea name="userEntrys[{ListElements.uid}]" class="uk-textarea" rows="5"
+										                 additionalAttributes="{maxlength:'{ListElements.maxcharacters}', uk-tooltip:'pos:right'}"/>
+									</f:if>
+									<f:if condition="{ListElements.inputtype}=='select'">
+										<f:form.select name="userEntrys[{ListElements.uid}]" class="uk-select"
+										               options="<DN:Selectfield selectfield='{ListElements.selectfield}' />"/>
+									</f:if>
+									<f:if condition="{ListElements.upload}=='TRUE'">
+										<f:form.upload name="file[{ListElements.uid}]" class="uk-input"/>
+									</f:if>
+								</f:else>
+							</f:if>
+						</div>
+						<div class="uk-width-2-5">
+							<f:render partial="Exponate/Infos" arguments="{_all}"/>
+						</div>
+					</div>
+				</div>
+			</f:for>
+			
+			<div class="uk-modal-footer uk-text-right">
+				<button type="button" class="uk-button uk-button-danger uk-modal-close">Close</button>
+				<f:form.submit value="<f:translate key='create' />" class="uk-button uk-button-primary CWhite"/>
+			</div>
+		
+		</f:form>
+	</div>
+</div>
+</html>

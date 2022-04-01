@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2014-12-04T16:30:48Z" product-name="dnexponatsliste">
+		<header/>
+		<body>
+			<trans-unit id="gesperrteelemte.description">
+				<source>gesperrteelemte</source>
+			</trans-unit>
+			<trans-unit id="gepserrteelemte.description">
+				<source>gepserrteelemte</source>
+			</trans-unit>
+			<trans-unit id="listelement.description">
+				<source>listelement</source>
+			</trans-unit>
+			<trans-unit id="gesperrt.description">
+				<source>gesperrt</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

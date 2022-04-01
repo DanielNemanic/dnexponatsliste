@@ -1,0 +1,20 @@
+{
+  "name": "dn/dnexponatsliste",
+  "description": "DN Exponatsliste",
+  "type": "typo3-cms-extension",
+  "keywords": ["TYPO3 CMS", "DN Exponatsliste", "DN Exponatsliste"],
+  "homepage": "",
+  "license": "GPL-2.0+",
+  "version": "8.7",
+  "support": {
+    "issues": "https://forge.typo3.org/"
+  },
+  "require": {
+    "typo3/cms-core": ">8.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "DN\\Dnexponatsliste\\": "Classes/"
+    }
+  }
+}

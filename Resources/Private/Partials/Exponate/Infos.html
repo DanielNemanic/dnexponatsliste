@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:for each="{ListElements.beispiel}" as="file">
+	
+	<div class="uk-text-small">
+		<a href="{file.originalResource.publicUrl}" target="_blank" class="Bsp">{file.originalResource.name}</a>
+		<f:if condition="{file.originalResource.referenceProperties.description}">
+			<span uk-icon="icon: info" uk-tooltip="{file.originalResource.referenceProperties.title}"></span>
+			<br>
+			{file.originalResource.referenceProperties.description}
+		</f:if>
+	</div>
+
+</f:for>
+
+<f:for each="{deadline}" as="dl">
+	<f:if condition="{ListElements.uid} == {dl.listelement}">
+		<div class="uk-text-small">
+			<b>
+				<f:translate key="tx_dnexponatsliste_domain_model_deadline"/>
+				:</b> <i class="uk-text-danger">
+			<f:format.date format="{dateFormat}">{dl.deadline}</f:format.date>
+		</i>
+		</div>
+	</f:if>
+</f:for>
+<f:if condition="{ListElements.maxcharacters}">
+	<div class="uk-text-small">
+		<b>
+			<f:translate key="tx_dnexponatsliste_domain_model_listelements.maxcharacters"/>
+			:</b> {ListElements.maxcharacters}
+	</div>
+</f:if>
+</html>

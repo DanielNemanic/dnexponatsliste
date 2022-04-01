@@ -1,0 +1,85 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:DN="http://typo3.org/ns/DN/Dnexponatsliste/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div id="SpaltenSperrenModal" class="uk-modal-container tx-exponatsliste" uk-modal="bg-close:false">
+	<div class="uk-modal-dialog uk-modal-body">
+		<a class="uk-modal-close-default" uk-close></a>
+		
+		<h2>
+			<f:translate key="spalten_sperren"/>
+		</h2>
+		<hr/>
+		
+		<div class="uk-margin uk-child-width-1-2" uk-grid>
+			<div>
+				<h4>
+					<f:translate key="spalten_sperren"/>
+				</h4>
+				<f:form action="spaltenSperren" name="spaltenSperren" object="{spaltenSperrenObject}" class="uk-form-stacked"
+				        enctype="multipart/form-data">
+					<div class="uk-margin">
+						<label for="tx_dnexponatsliste_dnexponatsliste[userEntrys][new]" class="uk-form-label">
+							<f:format.raw>
+								<DN:Sperren spaltenSperren="{spaltenSperren}" listElement="new"/>
+							</f:format.raw>
+							<f:translate key="new_element"/>
+						</label>
+					</div>
+					<f:for each="{listElements}" as="ListElements">
+						<div class="uk-margin">
+							<label for="tx_dnexponatsliste_dnexponatsliste[userEntrys][{ListElements.uid}]" class="uk-form-label">
+								<f:format.raw>
+									<DN:Sperren spaltenSperren="{spaltenSperren}" listElement="{ListElements.uid}"/>
+								</f:format.raw>
+								{ListElements.elementtitle}
+							</label>
+						</div>
+					</f:for>
+					<f:form.submit value="<f:translate key='spalten_sperren' />" class="uk-button uk-button-primary"/>
+				</f:form>
+			</div>
+			<div>
+				<h4>
+					<f:translate key="tx_dnexponatsliste_domain_model_deadline"/>
+				</h4>
+				<f:form action="deadline" name="deadline" object="{deadline}" class="uk-form-stacked" id="Deadline"
+				        enctype="multipart/form-data">
+					<f:for each="{deadline}" as="dl">
+						<f:if condition="{dl.listelement} == 'new'">
+							<div class="uk-margin">
+								<label for="tx_dnexponatsliste_dnexponatsliste[deadline][{dl.uid}]" class="uk-form-label">
+									<f:translate key="new_element"/>
+								</label>
+								<input value="<f:format.date format='{dateFormat}'>{dl.deadline}</f:format.date>"
+								       name="tx_dnexponatsliste_dnexponatsliste[deadline][{dl.uid}]"
+								       data-language="{langcode}"
+								       class="uk-input DatePicker"/>
+							</div>
+						</f:if>
+					</f:for>
+					<f:for each="{listElements}" as="ListElements">
+						<f:for each="{deadline}" as="dl">
+							<f:if condition="{ListElements.uid} == {dl.listelement}">
+								<div class="uk-margin">
+									<label for="tx_dnexponatsliste_dnexponatsliste[deadline][{dl.uid}]" class="uk-form-label">{ListElements.elementtitle}</label>
+									<input value="<f:format.date format='{dateFormat}'>{dl.deadline}</f:format.date>"
+									       name="tx_dnexponatsliste_dnexponatsliste[deadline][{dl.uid}]"
+									       data-language="{langcode}"
+									       class="uk-input DatePicker"/>
+								</div>
+							</f:if>
+						</f:for>
+					</f:for>
+					<f:form.submit value="<f:translate key='tx_dnexponatsliste_domain_model_deadline.save' />"
+					               class="uk-button uk-button-primary"/>
+				</f:form>
+			</div>
+		</div>
+		
+		<div class="uk-modal-footer uk-text-right">
+			<button type="button" class="uk-button uk-button-danger uk-modal-close">Close</button>
+		</div>
+	</div>
+</div>
+</html>

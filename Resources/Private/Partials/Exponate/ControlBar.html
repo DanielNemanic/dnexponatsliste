@@ -1,0 +1,84 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:DN="http://typo3.org.ns/DN/Dnexponatsliste/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<div class="ControlBar uk-margin uk-child-width-expand" uk-grid>
+	<div class="uk-width-1-2">
+		<f:if condition="{settings.editable}=='1'">
+			<f:if condition="<DN:NewSperren spaltenSperren='{spaltenSperren}'/> != 'TRUE' ">
+				<div class="uk-inline uk-padding-small">
+					<a href="#NewExponatModal" title="<f:translate key='new_exponat' />" uk-toggle
+					   uk-tooltip="pos:bottom-left"><span uk-icon="icon: plus"></span></a>
+					<f:render partial="Exponate/NewExponat" arguments="{_all}"/>
+				</div>
+			</f:if>
+			<f:if condition="{SiteAdmin}=='TRUE'">
+				<div class="uk-inline uk-padding-small">
+					<a href="#SpaltenSperrenModal" title="<f:translate key='spalten_sperren' />" uk-toggle
+					   uk-tooltip="pos:bottom-left"><span uk-icon="icon: ban"></span></a>
+					<f:render partial="SpaltenSperren/Modal" arguments="{_all}"/>
+				</div>
+			</f:if>
+		</f:if>
+		
+		<div class="uk-inline uk-padding-small">
+			<f:link.action action="excelDownload" title="<f:translate key='selected_download' />" class="ExcelDownload"><span
+				uk-icon="icon: download"></span></f:link.action>
+		</div>
+		<f:if condition="{settings.separateTabs} != '1'">
+			<div class="uk-inline uk-padding-small">
+				<a href="#" title="<f:translate key='hide_printing' />" uk-tooltip="pos:bottom-left"><span
+					uk-icon="icon: bolt"></span></a>
+				<div id="HidePrint" class="uk-width-large" uk-dropdown="mode: click">
+					<ul class="uk-list">
+						<li><label><input type="checkbox" class="uk-checkbox" checked>
+							<f:translate key="EditDate"/>
+						</label></li>
+						<li><label><input type="checkbox" class="uk-checkbox" checked> ID</label></li>
+						<li><label><input type="checkbox" class="uk-checkbox" checked>
+							<f:translate key="tx_dnexponatsliste_domain_model_exponate.exponatsnr"/>
+						</label></li>
+						<li><label><input type="checkbox" class="uk-checkbox" checked>
+							<f:translate key="tx_dnexponatsliste_domain_model_exponate.ansprechpartner"/>
+						</label></li>
+						<f:for each="{listElements}" as="ListElements">
+							<li><label><input type="checkbox" class="uk-checkbox" checked> {ListElements.elementtitle}</label></li>
+						</f:for>
+					</ul>
+				</div>
+			</div>
+		</f:if>
+		<div class="uk-inline uk-padding-small">
+			<a href="#" title="<f:translate key='eigene_exponate' />" id="EigeneEintraege" uk-tooltip="pos:bottom-left"><span
+				uk-icon="icon: user"></span></a>
+		</div>
+		<div class="uk-inline uk-padding-small">
+			<a href="#" title="<f:translate key='alle_exponat' />" id="AlleAnzeigen" uk-tooltip="pos:bottom-left"><span
+				uk-icon="icon: table"></span></a>
+		</div>
+		<div class="uk-inline uk-padding-small">
+			<a href="#" title="<f:translate key='format_kleiner' />" id="MinimizeFormat" uk-tooltip="pos:bottom-left"><span
+				uk-icon="icon: list"></span></a>
+		</div>
+		<div class="uk-inline uk-padding-small">
+			<a href="#" title="<f:translate key='format_groesser' />" id="MaximizeFormat" uk-tooltip="pos:bottom-left"><span
+				uk-icon="icon: menu"></span></a>
+		</div>
+	</div>
+	
+	<div class="uk-inline uk-padding-small">
+		<input type="text" class="uk-input SearchTable" target=".ExponateTable"
+		       placeholder="<f:translate key='search_table' />">
+		<f:if condition="{settings.editable}">
+			<f:form action="notification" controller="Ajax" name="email" pageType="22092017" object="{email}"
+			        class="uk-form-stacked" enctype="multipart/form-data">
+				<label>
+					<f:form.checkbox class="uk-checkbox notification" property="mailadress" checked="{email.mailadress}!=''"
+					                 value="1"/>
+					<f:translate key="receiveMail"/>
+					{data.uid}
+				</label>
+			</f:form>
+		</f:if>
+	</div>
+</div>
+</html>

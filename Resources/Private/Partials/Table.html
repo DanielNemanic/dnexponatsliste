@@ -1,0 +1,79 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="ScrollTable" UserName="{UserName}">
+	<table class="uk-table uk-table-hover uk-table-striped ExponateTable">
+		<thead>
+		<tr>
+			<th style="border-bottom: 2px solid rgb(247,146,30);">
+				<div>
+					<f:translate key="EditDate"/>
+				</div>
+			</th>
+			<f:for each="{fixedTabElements}" as="fixedTab">
+				<th>
+					<div>
+						<f:translate key="tx_dnexponatsliste_domain_model_exponate.{fixedTab}"/>
+					</div>
+				</th>
+			</f:for>
+			<f:for each="{listElements}" as="ListElements">
+				<f:if condition="{settings.separateTabs}">
+					<f:then>
+						<f:if condition="{ListElements.tabs} == {key}">
+							<th>{ListElements.elementtitle}</th>
+						</f:if>
+					</f:then>
+					<f:else>
+						<th>{ListElements.elementtitle}</th>
+					</f:else>
+				</f:if>
+			</f:for>
+		</tr>
+		</thead>
+		<tbody>
+		<f:for each="{exponates}" as="exponate">
+			<tr creator="{exponate.createdby}">
+				<td title="{exponate.uid}">
+					<div class="media">
+                            <span class="uk-float-left" href="#">
+                                <input class="ExponatslisteSelect uk-checkbox" type="checkbox" name="{exponate.uid}"/>
+                            </span>
+						<f:if condition="{settings.editable}=='1'">
+							<a href="#EditExponat{exponate.uid}" class="uk-float-left" uk-toggle><span uk-icon="icon: pencil"></span></a>
+							<f:render partial="Exponate/EditExponat" arguments="{_all}"/>
+							
+							<f:form action="delete" name="exponate" object="{exponate}" class="DeleteExponat uk-float-left"
+							        title="<f:translate key='delete_exponat' />">
+								<a href="#" title="<f:translate key='delete' />"><span uk-icon="icon: trash"></span></a>
+							</f:form>
+						</f:if>
+						
+						<div class="media-body">
+							<b title="{exponate.editedby}">{exponate.editedby}</b><br>
+							
+							<f:format.date format="H:i - d.m.Y">{exponate.editedat}</f:format.date>
+						</div>
+					</div>
+				</td>
+				<f:for each="{fixedTabElements}" as="fixedTab">
+					<td>
+						<div>{exponate.{fixedTab}}</div>
+					</td>
+				</f:for>
+				<f:for each="{listElements}" as="lE">
+					<f:if condition="{settings.separateTabs}">
+						<f:then>
+							<f:if condition="{lE.tabs} == {key}">
+								<f:render partial="Entrys/List" arguments="{_all}"/>
+							</f:if>
+						</f:then>
+						<f:else>
+							<f:render partial="Entrys/List" arguments="{_all}"/>
+						</f:else>
+					</f:if>
+				</f:for>
+			</tr>
+		</f:for>
+		</tbody>
+	</table>
+</div>
+</html>
